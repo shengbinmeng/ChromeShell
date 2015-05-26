@@ -21,8 +21,7 @@ and copy res/ from the resulting directory to chromeshell/ChromeShell/res/.
 ### Prepare the libraries
 
 Make directory chromeshell/ChromeShell/libs/, copy the following files from chromium/src/out/Release/lib.java/ to chromeshell/ChromeShell/libs/:
-
-	base_java.jar, chrome_java.jar, content_java.jar, dom_distiller_java.jar, printing_java.jar, service_tab_launcher_java.jar, sync_java.jar, ui_java.jar.
+base\_java.jar, chrome\_java.jar, content\_java.jar, dom\_distiller\_java.jar, printing\_java.jar, service\_tab\_launcher\_java.jar, sync\_java.jar, ui\_java.jar.
 
 Then copy the following files from chromium/src/third\_party/android\_tools/sdk/extras/android/support/v7/appcompat/ to chromeshell/ChromeShell/libs/:
 android-support-v4.jar, android-support-v7-appcompat.jar.
