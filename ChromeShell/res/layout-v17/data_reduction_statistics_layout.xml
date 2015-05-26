@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/data_reduction_statistics_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/PreferenceCategoryTextStyle" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/data_reduction_statistics_title" />
+    <include layout="@layout/data_usage_chart" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/PreferenceSummary" android:textSize="14.0sp" android:id="@id/data_reduction_start_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@style/PreferenceSummary" android:textSize="14.0sp" android:id="@id/data_reduction_end_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="50.0sp" android:textColor="?android:textColorPrimary" android:id="@id/data_reduction_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="20.0dip" android:paddingEnd="6.0dip">
+            <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/data_reduction_original_size_label" android:singleLine="true" />
+                <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/data_reduction_compressed_size_label" android:singleLine="true" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:id="@id/data_reduction_original_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:id="@id/data_reduction_compressed_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/data_reduction_proxy_unreachable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/data_reduction_proxy_unreachable_warn" android:drawablePadding="6.0dip" android:drawableStart="@drawable/deprecation_warning" />
+</LinearLayout>

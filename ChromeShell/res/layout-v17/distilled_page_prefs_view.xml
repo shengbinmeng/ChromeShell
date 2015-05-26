@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.dom_distiller.DistilledPagePrefsView android:orientation="vertical" android:background="@drawable/distilled_page_pref_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/radio_button_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/light_mode" android:text="@string/light_mode" style="@style/DistilledPagePrefThemeButton" />
+        <RadioButton android:id="@id/dark_mode" android:text="@string/dark_mode" style="@style/DistilledPagePrefThemeButton" />
+        <RadioButton android:id="@id/sepia_mode" android:text="@string/sepia_mode" style="@style/DistilledPagePrefThemeButton" />
+    </RadioGroup>
+    <Spinner android:orientation="horizontal" android:id="@id/font_family" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+        <TextView android:textSize="17.0sp" android:gravity="center" android:id="@id/font_size_percentage" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="50.0dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+        <TextView android:textSize="13.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/text_size_signifier" android:layout_marginStart="5.0dip" />
+        <SeekBar android:orientation="horizontal" android:id="@id/font_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="30" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/text_size_signifier" android:layout_marginEnd="3.0dip" />
+    </LinearLayout>
+</org.chromium.chrome.browser.dom_distiller.DistilledPagePrefsView>

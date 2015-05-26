@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="compositor_tab_title_bar_shadow_x_offset">0.6667dip</dimen>
+    <dimen name="compositor_tab_title_bar_shadow_y_offset">0.6667dip</dimen>
+    <dimen name="compositor_tab_title_bar_shadow_x_offset_incognito">-0.6667dip</dimen>
+    <dimen name="compositor_tab_title_bar_shadow_y_offset_incognito">-0.6667dip</dimen>
+    <dimen name="compositor_tab_title_favicon_size">16.0dip</dimen>
+</resources>

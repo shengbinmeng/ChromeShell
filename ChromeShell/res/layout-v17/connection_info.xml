@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/connection_info_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:id="@id/connection_info_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/connection_info_padding_thin">
+        <TextView android:textStyle="bold" android:textColor="@color/connection_info_popup_text" android:id="@id/connection_info_headline" android:paddingBottom="@dimen/connection_info_padding_thin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/connection_info_popup_text" android:id="@id/connection_info_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

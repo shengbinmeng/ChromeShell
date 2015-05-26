@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/default_text_color" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif-medium" android:textAlignment="viewStart" />
+    <RatingBar android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxHeight="16.0dip" android:indeterminateDrawable="@drawable/rating_bar" android:progressDrawable="@drawable/rating_bar" android:minHeight="16.0dip" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff646464" android:id="@id/web_app_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:textAlignment="viewStart" />
+</LinearLayout>

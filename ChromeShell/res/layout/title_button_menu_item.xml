@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?android:textAppearanceLargePopupMenu" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/title" android:background="?listChoiceBackgroundIndicator" android:paddingLeft="16.0dip" android:paddingRight="9.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    <org.chromium.chrome.browser.widget.TintedImageButton android:id="@id/button" android:background="?listChoiceBackgroundIndicator" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="56.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" chrome:tint="@null" />
+</LinearLayout>

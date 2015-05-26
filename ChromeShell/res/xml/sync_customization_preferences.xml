@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.chromium.chrome.browser.preferences.ChromeSwitchPreference android:key="sync_switch" android:summaryOn="@string/text_on" android:summaryOff="@string/text_off" />
+    <PreferenceCategory android:title="@string/sync_data_types" android:key="sync_data_types">
+        <org.chromium.chrome.browser.preferences.ChromeSwitchPreference android:persistent="false" android:title="@string/sync_everything_pref" android:key="sync_everything" />
+        <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:persistent="false" android:title="@string/sync_autofill" android:key="sync_autofill" />
+        <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:persistent="false" android:title="@string/sync_bookmarks" android:key="sync_bookmarks" />
+        <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:persistent="false" android:title="@string/sync_history" android:key="sync_omnibox" />
+        <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:persistent="false" android:title="@string/sync_passwords" android:key="sync_passwords" />
+        <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:persistent="false" android:title="@string/sync_recent_tabs" android:key="sync_recent_tabs" />
+    </PreferenceCategory>
+    <Preference android:title="@string/sync_encryption" android:key="encryption" />
+    <Preference android:title="@string/sync_manage_data" android:key="sync_manage_data" />
+</PreferenceScreen>

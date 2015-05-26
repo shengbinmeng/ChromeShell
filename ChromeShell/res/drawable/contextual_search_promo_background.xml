@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@color/contextual_search_promo_background_color" android:insetTop="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

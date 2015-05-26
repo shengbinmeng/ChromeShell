@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.chromium.chrome.browser.preferences.SearchEnginePreference android:title="@string/prefs_search_engine" android:key="search_engine" />
+    <Preference android:title="@string/prefs_autofill" android:fragment="org.chromium.chrome.browser.preferences.autofill.AutofillPreferences" />
+    <Preference android:title="@string/prefs_saved_passwords" android:fragment="org.chromium.chrome.browser.preferences.password.ManageSavedPasswordsPreferences" />
+    <Preference android:title="@string/prefs_accessibility" android:fragment="org.chromium.chrome.browser.preferences.AccessibilityPreferences" />
+    <Preference android:title="@string/prefs_content_settings" android:fragment="org.chromium.chrome.browser.preferences.website.ContentPreferences" />
+    <Preference android:title="@string/prefs_about_chrome" android:fragment="org.chromium.chrome.browser.preferences.AboutChromePreferences" />
+</PreferenceScreen>

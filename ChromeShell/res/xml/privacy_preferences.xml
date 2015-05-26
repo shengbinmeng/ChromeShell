@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:title="@string/navigation_error_title" android:key="navigation_error" android:summary="@string/navigation_error_summary" android:defaultValue="true" />
+    <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:title="@string/search_suggestions_title" android:key="search_suggestions" android:summary="@string/search_suggestions_summary" android:defaultValue="true" />
+    <Preference android:title="@string/contextual_search_title" android:key="contextual_search" android:fragment="org.chromium.chrome.browser.preferences.privacy.ContextualSearchPreferenceFragment" />
+    <org.chromium.chrome.browser.preferences.privacy.NetworkPredictionPreference android:entries="@array/bandwidth_entries" android:title="@string/network_predictions_title" android:key="network_predictions" android:defaultValue="@string/network_prediction_wifi_only_value" android:entryValues="@array/bandwidth_entry_values" />
+    <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:title="@string/network_predictions_title" android:key="network_predictions_no_cellular" android:summary="@string/network_predictions_summary" android:defaultValue="true" />
+    <org.chromium.chrome.browser.preferences.privacy.CrashDumpUploadPreference android:entries="@array/crash_upload_entries" android:title="@string/crash_dump_upload_title" android:key="crash_dump_upload" android:defaultValue="@string/crash_dump_never_upload_value" android:entryValues="@array/crash_upload_values" />
+    <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:title="@string/crash_dump_upload_title" android:key="crash_dump_upload_no_cellular" android:defaultValue="false" />
+    <Preference android:title="@string/usage_and_crash_reports_title" android:key="usage_and_crash_reports" android:fragment="org.chromium.chrome.browser.preferences.privacy.UsageAndCrashReportsPreferenceFragment" />
+    <Preference android:title="@string/do_not_track_title" android:key="do_not_track" android:fragment="org.chromium.chrome.browser.preferences.privacy.DoNotTrackPreference" />
+    <org.chromium.chrome.browser.preferences.ButtonPreference android:title="@string/clear_browsing_data_title" android:key="clear_browsing_data" />
+</PreferenceScreen>
