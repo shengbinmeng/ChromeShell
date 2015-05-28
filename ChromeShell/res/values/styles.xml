@@ -446,14 +446,14 @@
         <item name="android:textColor">?editTextColor</item>
         <item name="android:background">?editTextBackground</item>
     </style>
-    <style name="Base.Widget.AppCompat.DrawerArrowToggle.Common" parent="">
+    <style name="Base.Widget.AppCompat.DrawerArrowToggleCommon" parent="">
         <item name="color">?android:textColorSecondary</item>
         <item name="spinBars">true</item>
         <item name="topBottomBarArrowSize">11.309998dip</item>
         <item name="middleBarArrowSize">16.0dip</item>
         <item name="thickness">2.0dip</item>
     </style>
-    <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="@style/Base.Widget.AppCompat.DrawerArrowToggle.Common">
+    <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="@style/Base.Widget.AppCompat.DrawerArrowToggleCommon">
         <item name="drawableSize">24.0dip</item>
         <item name="gapBetweenBars">3.0dip</item>
         <item name="barSize">18.0dip</item>

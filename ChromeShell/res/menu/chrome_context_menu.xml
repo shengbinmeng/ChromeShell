@@ -14,7 +14,7 @@
         <item android:id="@id/contextmenu_open_image" android:title="@string/contextmenu_open_image" />
         <item android:id="@id/contextmenu_open_image_in_new_tab" android:title="@string/contextmenu_open_image_in_new_tab" />
         <item android:id="@id/contextmenu_open_original_image_in_new_tab" android:title="@string/contextmenu_open_original_image_in_new_tab" />
-        <item android:id="@id/contextmenu_search_by_image" />
+        <item xmlns:tools="http://schemas.android.com/tools" android:id="@id/contextmenu_search_by_image" tools:ignore="MenuTitle" />
         <item android:id="@id/contextmenu_copy_image" android:title="@string/contextmenu_copy_image" />
         <item android:id="@id/contextmenu_copy_image_url" android:title="@string/contextmenu_copy_image_url" />
     </group>
