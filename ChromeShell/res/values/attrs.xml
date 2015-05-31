@@ -79,14 +79,6 @@
         <enum name="none" value="2" />
         <enum name="slide" value="1" />
     </attr>
-    <attr name="externalRouteEnabledDrawable" format="reference" />
-    <attr name="mediaRouteButtonStyle" format="reference" />
-    <attr name="mediaRouteOffDrawable" format="reference" />
-    <attr name="mediaRouteConnectingDrawable" format="reference" />
-    <attr name="mediaRouteOnDrawable" format="reference" />
-    <attr name="mediaRouteSettingsDrawable" format="reference" />
-    <attr name="mediaRoutePlayDrawable" format="reference" />
-    <attr name="mediaRoutePauseDrawable" format="reference" />
     <attr name="optimalWidth" format="dimension" />
     <attr name="optimalWidthWeight" format="float" />
     <attr name="primaryDrawable" format="reference" />
