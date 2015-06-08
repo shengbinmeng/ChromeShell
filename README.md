@@ -2,11 +2,10 @@ Android Chrome shell extracted from the chromium project.
 
 ## How to extract
 
-### Build Chrome shell in the chromium project
+Before the extraction, you need to get the chromium code and have a successful build of Android Chrome Shell.
+Refer to <https://code.google.com/p/chromium/wiki/AndroidBuildInstructions> and make sure the following command runs successfully.
 
-Refer to <https://code.google.com/p/chromium/wiki/AndroidBuildInstructions> and execute the following command successfully.
-
-	ninja -C out/Release content_shell_apk
+	ninja -C out/Release chrome_shell_apk
 	
 ### Prepare src and manifest file
 
