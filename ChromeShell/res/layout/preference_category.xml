@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PreferenceCategoryWithButtonStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@style/PreferenceCategoryTextStyle" android:id="@android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
-    <ImageView android:id="@android:id/icon" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:minWidth="@dimen/min_touch_target_size" android:minHeight="@dimen/min_touch_target_size" android:contentDescription="@null" />
-</LinearLayout>

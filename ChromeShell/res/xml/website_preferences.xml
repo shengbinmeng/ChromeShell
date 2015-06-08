@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="@string/all_sites"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
-    <org.chromium.chrome.browser.preferences.ChromeSwitchPreference android:key="read_write_toggle" android:defaultValue="true" chrome:drawDivider="true" />
-    <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:title="@string/allow_third_party_cookies_title" android:key="third_party_cookies" android:summary="@string/allow_third_party_cookies_summary" android:defaultValue="true" />
-    <org.chromium.chrome.browser.preferences.HyperlinkPreference android:background="?android:listDivider" android:title="@string/learn_more" android:key="protected_content_learn_more" chrome:url="@string/protected_content_learn_more_url" chrome:imitateWebLink="true" />
-    <org.chromium.chrome.browser.preferences.ExpandablePreferenceGroup android:key="blocked_group" />
-    <org.chromium.chrome.browser.preferences.ExpandablePreferenceGroup android:key="allowed_group" />
-</PreferenceScreen>

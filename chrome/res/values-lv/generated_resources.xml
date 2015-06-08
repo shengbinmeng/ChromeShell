@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="login_dialog_title">"Nepieciešama autentiskuma noteikšana"</string>
+<string name="login_dialog_username_field">"Lietotājvārds:"</string>
+<string name="login_dialog_password_field">"Parole:"</string>
+<string name="login_dialog_ok_button_label">"Pieteikšanās"</string>
+<string name="http_post_warning">"Lapa, ko meklējāt, izmantoja jūsu ievadīto informāciju. Atgriešanās lapā var radīt jebkuras jūsu darbības atkārtojumu. Vai vēlaties turpināt?"</string>
+<string name="http_post_warning_resend">"Turpināt"</string>
+<string name="sad_tab_title">"Cilnes avārija."</string>
+<string name="sad_tab_message">"Šīs tīmekļa lapas rādīšanas laikā radās kļūda. Lai turpinātu, veiciet lapas atkārtotu ielādi vai atveriet citu lapu."</string>
+<string name="sad_tab_reload_label">"Pārlādēt"</string>
+<string name="options_homepage_title">"Sākumlapa"</string>
+<string name="options_startup_pages_placeholder">"Ievadīt URL..."</string>
+<string name="autofill_card_unmask_prompt_storage_checkbox">"Saglabāt šīs kartes kopiju šajā ierīcē"</string>
+<string name="autofill_card_unmask_prompt_storage_tooltip">"Ja šī izvēles rūtiņa ir atzīmēta, pārlūks Chrome saglabās jūsu kartes kopiju šajā ierīcē, lai nodrošinātu ātrāku veidlapu aizpildi."</string>
+<string name="autofill_card_unmask_confirm_button">"Verificēt"</string>
+<string name="autofill_card_unmask_verification_in_progress">"Notiek kartes verificēšana"</string>
+<string name="autofill_card_unmask_verification_success">"Jūsu karte ir verificēta."</string>
+<string name="autofill_card_unmask_expiration_date_separator">"/"</string>
+<string name="autofill_from_google_account">"Google maks"</string>
+<string name="autofill_clear_local_copy_button">"Dzēst kopiju"</string>
+</resources>

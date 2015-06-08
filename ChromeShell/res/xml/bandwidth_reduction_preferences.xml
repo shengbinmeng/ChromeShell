@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.chromium.chrome.browser.preferences.bandwidth.BandwidthStatisticsPreferenceCategory android:id="@id/data_usage_statistics_category" android:layout="@layout/custom_preference" android:key="data_usage_statistics_category" android:widgetLayout="@layout/data_reduction_statistics_layout" />
-</PreferenceScreen>

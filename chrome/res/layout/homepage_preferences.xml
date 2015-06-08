@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2015 The Chromium Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+<ScrollView android:fillViewport="true" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  
+
+    
+  <LinearLayout android:clickable="true" android:focusableInTouchMode="true" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
+    
+
+        
+    <LinearLayout android:gravity="center_vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:paddingBottom="16dp" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="16dp" style="@style/PreferenceLayout">
+      
+
+            
+      <TextView android:id="@+id/homepage_switch_label" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" style="@style/PreferenceTitle"/>
+      
+
+            
+      <org.chromium.chrome.browser.widget.ChromeSwitchCompat android:id="@+id/homepage_switch" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textOff="@string/text_off" android:textOn="@string/text_on"/>
+      
+
+        
+    </LinearLayout>
+    
+
+        
+    <ImageView android:contentDescription="@null" android:layout_height="wrap_content" android:layout_width="match_parent" android:scaleType="fitXY" android:src="?android:attr/listDivider"/>
+    
+
+        
+    <EditText android:hint="@string/options_startup_pages_placeholder" android:id="@+id/custom_uri" android:inputType="textUri" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginTop="16dp" android:layout_width="match_parent" android:nextFocusLeft="@id/custom_uri" android:nextFocusUp="@id/custom_uri" android:singleLine="true" android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+
+        
+    <CheckBox android:id="@+id/default_checkbox" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginTop="16dp" android:layout_width="match_parent" android:text="@string/homepage_default_title"/>
+    
+    
+  </LinearLayout>
+  
+
+
+</ScrollView>

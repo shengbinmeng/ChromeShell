@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Preference android:selectable="false" android:key="server_card_description" />
-    <org.chromium.chrome.browser.preferences.TextAndButtonPreference android:title="@string/autofill_from_google_account_long" android:key="server_card_edit_link" android:widgetLayout="@layout/autofill_server_data_edit_link" />
-    <org.chromium.chrome.browser.preferences.TextAndButtonPreference android:title="@string/autofill_describe_local_copy" android:key="server_card_local_copy_button" android:widgetLayout="@layout/autofill_server_card_clear_copy_button" />
-</PreferenceScreen>

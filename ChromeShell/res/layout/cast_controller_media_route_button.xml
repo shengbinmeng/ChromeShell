@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<org.chromium.chrome.browser.media.remote.FullscreenMediaRouteButton android:layout_gravity="start|center|top" android:id="@id/cast_controller_media_route_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CastMediaRouteButton"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

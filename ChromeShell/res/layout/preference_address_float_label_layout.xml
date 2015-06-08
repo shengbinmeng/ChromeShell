@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<org.chromium.chrome.browser.widget.FloatLabelLayout android:id="@id/float_label_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:id="@id/address_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textPostalAddress|textCapWords" />
-</org.chromium.chrome.browser.widget.FloatLabelLayout>

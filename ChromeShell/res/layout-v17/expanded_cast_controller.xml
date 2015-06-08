@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center_vertical" android:id="@id/cast_frame_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cast_background_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@null" android:alpha="0.7" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
-    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/cast_media_controller_text" android:gravity="center" android:layout_gravity="center" android:id="@id/cast_screen_title" android:layout_width="wrap_content" android:layout_height="fill_parent" />
-    <org.chromium.third_party.android.media.MediaController android:layout_gravity="bottom" android:id="@id/cast_media_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</FrameLayout>

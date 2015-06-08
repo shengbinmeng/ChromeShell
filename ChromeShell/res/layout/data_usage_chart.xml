@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<org.chromium.third_party.android.datausagechart.ChartDataUsageView android:id="@id/chart" android:paddingTop="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/data_usage_chart_height"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
-    <org.chromium.third_party.android.datausagechart.ChartNetworkSeriesView android:id="@id/original_series" android:background="@color/data_reduction_chart_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" settings:strokeColor="@color/data_reduction_original_color" settings:fillColor="@color/data_reduction_original_color" settings:fillColorSecondary="@color/data_reduction_original_color" />
-    <org.chromium.third_party.android.datausagechart.ChartNetworkSeriesView android:id="@id/compressed_series" android:layout_width="fill_parent" android:layout_height="fill_parent" settings:strokeColor="@color/data_reduction_compressed_color" settings:fillColor="@color/data_reduction_compressed_color" settings:fillColorSecondary="@color/data_reduction_compressed_color" />
-</org.chromium.third_party.android.datausagechart.ChartDataUsageView>

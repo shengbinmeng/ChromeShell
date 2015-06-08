@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <org.chromium.chrome.browser.preferences.TextScalePreference android:title="@string/font_size" android:selectable="false" android:key="text_scale" />
-    <org.chromium.chrome.browser.preferences.SeekBarLinkedCheckBoxPreference android:title="@string/force_enable_zoom_title" android:key="force_enable_zoom" android:summary="@string/force_enable_zoom_summary" />
-</PreferenceScreen>

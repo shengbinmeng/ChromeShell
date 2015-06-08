@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2015 The Chromium Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+<org.chromium.chrome.browser.widget.PaddedFrameLayout android:background="#c000" chrome:maxChildHeight="@dimen/data_reduction_promo_screen_height" chrome:maxChildWidth="@dimen/data_reduction_promo_screen_width" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+  
+    
+  <ScrollView android:fillViewport="true" android:layout_height="match_parent" android:layout_width="match_parent">
+    
+    
+    <RelativeLayout android:background="#FFFF" android:id="@+id/front_layout" android:layout_height="wrap_content" android:layout_width="match_parent">
+      
+
+        
+      <org.chromium.chrome.browser.widget.TintedImageButton android:background="?android:attr/selectableItemBackground" android:contentDescription="@string/close" android:id="@+id/close_button_front" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:layout_height="56dp" android:layout_width="56dp" android:src="@drawable/btn_close"/>
+      
+
+        
+      <ImageView android:contentDescription="@null" android:id="@+id/google_icon" android:layout_alignParentTop="true" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_width="wrap_content" android:src="@drawable/product_logo_name"/>
+      
+        
+      <LinearLayout android:id="@+id/data_reduction_invitation_text" android:layout_below="@+id/google_icon" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:layout_width="match_parent" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp">
+        
+            
+        <TextView android:gravity="center" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/data_reduction_title_1" android:textColor="#000" android:textSize="28sp"/>
+        
+            
+        <org.chromium.ui.widget.TextViewWithClickableSpans android:gravity="center" android:id="@+id/data_reduction_title_2_link" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_width="match_parent" android:lineSpacingExtra="20sp" android:lineSpacingMultiplier="0" android:textColor="#333" android:textColorLink="#27b4e7" android:textSize="16sp"/>
+        
+            
+        <TextView android:gravity="center" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_width="match_parent" android:lineSpacingExtra="20sp" android:lineSpacingMultiplier="0" android:text="@string/data_reduction_title_3" android:textColor="#333" android:textSize="16sp"/>
+        
+        
+      </LinearLayout>
+      
+        
+      <ImageView android:adjustViewBounds="true" android:contentDescription="@null" android:layout_alignParentBottom="true" android:layout_height="198dp" android:layout_width="@dimen/data_reduction_promo_screen_width" android:scaleType="matrix" android:src="@drawable/graph_illustration"/>
+      
+        
+      <LinearLayout android:clipToPadding="false" android:layout_below="@+id/data_reduction_invitation_text" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_width="match_parent" android:orientation="vertical" android:paddingBottom="24dp" android:paddingLeft="40dp" android:paddingRight="40dp">
+        
+            
+        <org.chromium.chrome.browser.widget.ButtonCompat android:id="@+id/enable_button_front" android:layout_height="wrap_content" android:layout_width="match_parent" android:minHeight="48dp" android:text="@string/data_reduction_enable_button" android:textColor="#fff" chrome:buttonColor="#27b4e7"/>
+        
+            
+        <org.chromium.chrome.browser.widget.ButtonCompat android:id="@+id/no_thanks_button" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_width="match_parent" android:minHeight="48dp" android:text="@string/no_thanks" android:textColor="#666" chrome:buttonColor="@color/default_primary_color"/>
+        
+        
+      </LinearLayout>
+      
+    
+    </RelativeLayout>
+    
+    
+  </ScrollView>
+  
+
+</org.chromium.chrome.browser.widget.PaddedFrameLayout>

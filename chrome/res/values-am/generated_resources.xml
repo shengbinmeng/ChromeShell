@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="login_dialog_title">"ማረጋገጫ ያስፈልጋል"</string>
+<string name="login_dialog_username_field">"የተጣቃሚ ስም፦"</string>
+<string name="login_dialog_password_field">"የይለፍ ቃል፦"</string>
+<string name="login_dialog_ok_button_label">"ይግቡ"</string>
+<string name="http_post_warning">"እየፈለጉት ያሉት ገጽ ያስገቡትን መረጃ ተጥቅሟል። ወደዛ ገጽ መመለስ ወስደውት የነበረውን ርምጃ እንዲደገም ሊያደርግ ይችላል። ለመቀጠል ይፈልጋሉ?"</string>
+<string name="http_post_warning_resend">"ቀጥል"</string>
+<string name="sad_tab_title">"ውይ፣ ተሰናከለ!"</string>
+<string name="sad_tab_message">"ይህን ድረ-ገጽ በማሳየት ላይ ሳለ የሆነ ነገር ልክ አልነበረም። ለመቀጠል ዳግም ይጫኑ ወይም ወደ ሌላ ገጽ ይሂዱ።"</string>
+<string name="sad_tab_reload_label">"ዳግም ጫን"</string>
+<string name="options_homepage_title">"መነሻ ገጽ"</string>
+<string name="options_startup_pages_placeholder">"ዩአርኤል ያስገቡ..."</string>
+<string name="autofill_card_unmask_prompt_storage_checkbox">"የዚህን ካርድ ቅጂ በዚህ መሣሪያ ላይ አቆይ"</string>
+<string name="autofill_card_unmask_prompt_storage_tooltip">"ምልክት ከተደረገበት፣ Chrome ለተሻለ ፈጣን የቅጽ አሞላል የካርድዎን ቅጂ በዚህ መሣሪያ ላይ ያከማቻል።"</string>
+<string name="autofill_card_unmask_confirm_button">"አረጋግጥ"</string>
+<string name="autofill_card_unmask_verification_in_progress">"ካርድ ማረጋገጥ"</string>
+<string name="autofill_card_unmask_verification_success">"የእርስዎ ካርድ ተረጋግጧል"</string>
+<string name="autofill_card_unmask_expiration_date_separator">"/"</string>
+<string name="autofill_from_google_account">"Google Wallet"</string>
+<string name="autofill_clear_local_copy_button">"ቅጂን አጽዳ"</string>
+</resources>
