@@ -10,12 +10,23 @@ Refer to <https://code.google.com/p/chromium/wiki/AndroidBuildInstructions> and 
 ### Prepare src and manifest file
 
 Make a directory chromeshell/ChromeShell where the project will stay in. Then copy chromium/src/chrome/android/shell/java/src/ to chromeshell/ChromeShell/src/, 
-and copy chromium/src/out/Release/gen/chrome\_shell\_manifest/AndroidManifest.xml to chromeshell/ChromeShell/AndroidManifest.xml.
+and copy chromium/src/out/Release/gen/chrome\_shell\_manifest/AndroidManifest.xml to be chromeshell/ChromeShell/AndroidManifest.xml.
 
 ### Create the Android project
 
 In Eclipse with ADT, select File->Import...->Android->Existing Android Code Into Workspace，and choose chromeshell/ChromeShell to
 finish the import. Make sure in project.properties, target=android-21(or higher).
+
+### Prepare the native libraries
+
+Extract the native libs (libchromeshell.so and libchromium_android_linker.so) from the APK you successfully built from the ninja command.
+Prepare them as prebuilt libraries in the jni folder.
+
+Besides, copy chromium/src/out/Release/chrome_shell_apk/native_libraries_java/NativeLibraries.java to be chromeshell/ChromeShell/src/org/chromium/base/library_loader/NativeLibraries.java.
+
+### Prepare the asset folder
+
+Extract the "assets" folder from the APK you successfully built from the ninja command, and put it under chromeshell/ChromeShell/.
 
 ### Prepare library projects
 
@@ -28,7 +39,7 @@ The ChromeShell application project depends on these library projects.
 
 Make directory chromeshell/ChromeShell/libs/, copy the jar files that are not prepared in above step from chromium/src/out/Release/lib.java/ to chromeshell/ChromeShell/libs/.
 
-Besides, also copy chromium/src/third_party/android_tools/sdk/extras/google/gcm/gcm-client/dist/gcm.jar.
+Also copy chromium/src/third_party/android_tools/sdk/extras/google/gcm/gcm-client/dist/gcm.jar to chromeshell/ChromeShell/libs/.
 
 ### Add needed play services modules
 
