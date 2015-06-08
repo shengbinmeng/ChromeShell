@@ -7,9 +7,10 @@ Refer to <https://code.google.com/p/chromium/wiki/AndroidBuildInstructions> and 
 
 	ninja -C out/Release chrome_shell_apk
 	
-### Prepare src and manifest file
+### Copy src, res, and manifest file
 
-Make a directory chromeshell/ChromeShell where the project will stay in. Then copy chromium/src/chrome/android/shell/java/src/ to chromeshell/ChromeShell/src/, 
+Make a directory chromeshell/ChromeShell where the project will stay in. Then copy chromium/src/chrome/android/shell/java/src/ to be chromeshell/ChromeShell/src/, 
+copy chromium/src/chrome/android/shell/res/ to be chromeshell/ChromeShell/res/, 
 and copy chromium/src/out/Release/gen/chrome\_shell\_manifest/AndroidManifest.xml to be chromeshell/ChromeShell/AndroidManifest.xml.
 
 ### Create the Android project
@@ -19,19 +20,19 @@ finish the import. Make sure in project.properties, target=android-21(or higher)
 
 ### Prepare the native libraries
 
-Extract the native libs (libchromeshell.so and libchromium_android_linker.so) from the APK you successfully built from the ninja command.
+Unzip the APK you successfully built from the ninja command, and copy out the native libs (libchromeshell.so and libchromium_android_linker.so).
 Prepare them as prebuilt libraries in the jni folder.
 
 Besides, copy chromium/src/out/Release/chrome_shell_apk/native_libraries_java/NativeLibraries.java to be chromeshell/ChromeShell/src/org/chromium/base/library_loader/NativeLibraries.java.
 
 ### Prepare the asset folder
 
-Extract the "assets" folder from the APK you successfully built from the ninja command, and put it under chromeshell/ChromeShell/.
+Unzip the APK you successfully built from the ninja command, and copy out the "assets" folder. Put the copy under chromeshell/ChromeShell/.
 
 ### Prepare library projects
 
 Make library projects according to chromium/src/out/Release/res.java/: for every library that has resources, we should make a library project using its resources here and its jar file in chromium/src/out/Release/lib.java/.
-The src directory of the library project can be empty since all the codes are in the jar.
+The src directory of the library project is empty (or doesn't exist at all) since all the codes are in the jar.
 
 The ChromeShell application project depends on these library projects.
 
