@@ -20,7 +20,7 @@ finish the import. Make sure in project.properties, target=android-21(or higher)
 
 ### Prepare the native libraries
 
-Unzip the APK you successfully built from the ninja command, and copy out the native libs (libchromeshell.so and libchromium_android_linker.so).
+Unzip the APK you successfully built from the ninja command, and copy out the native libs (libchromeshell.so and libchromium\_android\_linker.so).
 Prepare them as prebuilt libraries in the jni folder.
 
 Besides, copy chromium/src/out/Release/chrome\_shell\_apk/native\_libraries\_java/NativeLibraries.java to be chromeshell/ChromeShell/src/org/chromium/base/library\_loader/NativeLibraries.java.
