@@ -21,11 +21,11 @@ finish the import. Make sure in project.properties, target=android-21(or higher)
 ### Prepare the native libraries
 
 Unzip the APK you successfully built from the ninja command, and copy out the native libs (libchromeshell.so and libchromium\_android\_linker.so).
-Prepare them as prebuilt libraries in the jni folder.
+Use them as prebuilt libraries to prepare the folder chromeshell/ChromeShell/jni/.
 
 Besides, copy chromium/src/out/Release/chrome\_shell\_apk/native\_libraries\_java/NativeLibraries.java to be chromeshell/ChromeShell/src/org/chromium/base/library\_loader/NativeLibraries.java.
 
-### Prepare the asset folder
+### Prepare the assets folder
 
 Unzip the APK you successfully built from the ninja command, and copy out the "assets" folder. Put that copy under chromeshell/ChromeShell/.
 
@@ -34,7 +34,7 @@ Unzip the APK you successfully built from the ninja command, and copy out the "a
 Make library projects according to chromium/src/out/Release/res.java/: for every library that has resources, we should make a library project using its resources here and its jar file in chromium/src/out/Release/lib.java/.
 The src directory of the library project is empty (or doesn't exist at all) since all the codes are in the jar.
 
-The ChromeShell application project depends on these library projects.
+These library projects may have dependency between them, but they are together to provide support for the application project ChromeShell.
 
 ### Add other libraries
 
@@ -47,3 +47,5 @@ Also copy chromium/src/third\_party/android\_tools/sdk/extras/google/gcm/gcm-cli
 The project needs modules from Google's play services library. However, the play services library is so huge that if we import it totally, multidex must be used (See <http://developer.android.com/tools/building/multidex.html>).
 With Eclipse, multidex is hard to support, so avoid importing the whole play services library and only add the needed module(s): play-services-cast
 (See <https://androiddevx.wordpress.com/2014/10/28/google-play-services-on-a-much-needed-diet/>).
+
+Chinese guide is at <http://blog.shengbin.me/posts/extract-android-chrome-shell-from-chromium/>.
