@@ -23,11 +23,11 @@ finish the import. Make sure in project.properties, target=android-21(or higher)
 Unzip the APK you successfully built from the ninja command, and copy out the native libs (libchromeshell.so and libchromium_android_linker.so).
 Prepare them as prebuilt libraries in the jni folder.
 
-Besides, copy chromium/src/out/Release/chrome_shell_apk/native_libraries_java/NativeLibraries.java to be chromeshell/ChromeShell/src/org/chromium/base/library_loader/NativeLibraries.java.
+Besides, copy chromium/src/out/Release/chrome\_shell\_apk/native\_libraries\_java/NativeLibraries.java to be chromeshell/ChromeShell/src/org/chromium/base/library\_loader/NativeLibraries.java.
 
 ### Prepare the asset folder
 
-Unzip the APK you successfully built from the ninja command, and copy out the "assets" folder. Put the copy under chromeshell/ChromeShell/.
+Unzip the APK you successfully built from the ninja command, and copy out the "assets" folder. Put that copy under chromeshell/ChromeShell/.
 
 ### Prepare library projects
 
@@ -40,10 +40,10 @@ The ChromeShell application project depends on these library projects.
 
 Make directory chromeshell/ChromeShell/libs/, copy the jar files that are not prepared in above step from chromium/src/out/Release/lib.java/ to chromeshell/ChromeShell/libs/.
 
-Also copy chromium/src/third_party/android_tools/sdk/extras/google/gcm/gcm-client/dist/gcm.jar to chromeshell/ChromeShell/libs/.
+Also copy chromium/src/third\_party/android\_tools/sdk/extras/google/gcm/gcm-client/dist/gcm.jar to chromeshell/ChromeShell/libs/.
 
 ### Add needed play services modules
 
 The project needs modules from Google's play services library. However, the play services library is so huge that if we import it totally, multidex must be used (See <http://developer.android.com/tools/building/multidex.html>).
-With Eclipse, multidex is hard to support, so I avoid importing the whole play services library and only add the needed module(s): play-services-cast
+With Eclipse, multidex is hard to support, so avoid importing the whole play services library and only add the needed module(s): play-services-cast
 (See <https://androiddevx.wordpress.com/2014/10/28/google-play-services-on-a-much-needed-diet/>).
