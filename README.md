@@ -15,7 +15,7 @@ and copy chromium/src/out/Release/gen/chrome\_shell\_manifest/AndroidManifest.xm
 
 ### Create the Android project
 
-In Eclipse with ADT, select File->Import...->Android->Existing Android Code Into Workspace，and choose chromeshell/ChromeShell to
+In Eclipse with ADT, select File->Import...->Android->Existing Android Code Into Workspace, and choose chromeshell/ChromeShell to
 finish the import. Make sure in project.properties, target=android-21(or higher).
 
 ### Prepare the native libraries
@@ -52,4 +52,4 @@ Chinese guide is at <http://blog.shengbin.me/posts/extract-android-chrome-shell-
 
 ## How to use
 
-Import all projects (File->Import...->Android->Existing Android Code Into Workspace，and choose chromeshell/) and you are good to go. Please wait for the workspace to be built and all errors to disappear.
+Import all projects (File->Import...->Android->Existing Android Code Into Workspace, and choose chromeshell/) and you are good to go. Please wait for the workspace to be built and all errors to disappear.
