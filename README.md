@@ -49,3 +49,7 @@ With Eclipse, multidex is hard to support, so avoid importing the whole play ser
 (See <https://androiddevx.wordpress.com/2014/10/28/google-play-services-on-a-much-needed-diet/>).
 
 Chinese guide is at <http://blog.shengbin.me/posts/extract-android-chrome-shell-from-chromium/>.
+
+## How to use
+
+Import all projects (File->Import...->Android->Existing Android Code Into Workspace，and choose chromeshell/) and you are good to go. Please wait for the workspace to be built and all errors to disappear.
